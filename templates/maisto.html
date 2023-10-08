@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maisto Collection</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'maisto.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Maisto</h1>
+        <nav>
+            <ul>
+                <li><a href="../../home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product-list">
+        <!-- Each product should be wrapped in a separate maisto-item div -->
+        {% for maisto in maisto_list %}
+        <div class="maisto-item">
+            <a href="#">
+                <img src="{{ maisto.image_url }}" alt="{{ maisto.name }}">
+            </a>
+            <h3>{{ maisto.name }}</h3>
+            <p>Price: ₹{{ maisto.price }}</p>
+            <div class="talk-to-seller" id="talkToSeller{{ maisto.id }}">
+                <a href="mailto:{{ maisto.email_id }}" class="contact-button">Talk via Email</a>
+                <a href="https://wa.me/{{ maisto.number }}" class="contact-button whatsapp">Talk via WhatsApp</a>
+                <!-- You can add more communication links as needed -->
+            </div>
+        </div>
+        {% endfor %}
+        <!-- Repeat the above structure for other products -->
+    </section>
+</body>
+</html>

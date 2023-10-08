@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'Home.css' %}">
+    <title>Diecast Car Models Store</title>
+</head>
+<body>
+    <header>
+        <h1>Diecasttraders</h1>
+        <h2>A place to sell your own diecast models</h2>
+        <nav>
+            <ul>
+                <li><a href="../home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+
+    </header>
+    
+    <section id="shop" class="product-list">
+        
+        <div class="product">
+            <a href="hotwheels">
+            <img src="{% static 'Brand_logos/hot-wheels4951.jpg' %}" alt="Hotwheels">
+            <h3>Hotwheels</h3>
+            </a>
+        </div>
+        <div class="product">
+            <a href="majorette">
+            <img src="{% static 'Brand_logos/Majorette.png' %}" alt="Majorette">
+            <h3>Majorette</h3>
+            </a>
+        </div>
+        <div class="product">
+            <a href="tomica">
+            <img src="{% static 'Brand_logos/logo_tomica.jpg' %}" alt="Tomica">
+            <h3>Tomica</h3>
+            </a>
+        </div>
+        <div class="product">
+            <a href="maisto">
+            <img src="{% static 'Brand_logos/Maisto-Logo-Vector.jpg' %}" alt="Maisto">
+            <h3>Maisto</h3>
+            </a>
+        </div>
+        <div class="product">
+            <a href="matchbox">
+            <img src="{% static 'Brand_logos/Final 2.png' %}" alt="Matchbox">
+            <h3>Matchbox</h3>
+            </a>
+        </div>
+        <div class="product">
+            <a href="others">
+            <img src="{% static 'Brand_logos/other brands.jpeg' %}" alt="Other Brands">
+            <h3>Other Brands</h3>
+            </a>
+        </div>
+        <!-- More product items can be added here -->
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>This website is for fellow die-cast collectors who wants to sell their own Die-cast models but don't 
+           know where to display those. My vision is simple, no nonsense website, just to display your cars here, 
+           along with prices and your contact information. The buyer shall contact you via your Email ID, then you 
+           people can share the delivery and contact information in private. Diecasttrader is not responsible for the delivery.
+        </p>
+    </section>
+
+    <section id="faqs" class="faq-section">
+        <h1>FAQs</h1>
+        <h2>Charges for displaying the model?</h2>
+        <p>
+            Price for listing is ₹5. The paywall of ₹5 will make sure that the seller is serious about the product and not just a troll. 
+            If the article is sold, I will not be taking any commission from the sale. 
+        </p>
+        <h3>How does delivery work?</h3>
+        <p>
+            Once you contact the seller, by clicking on the Email / WhatsApp icon below the listing, 
+            mention to the seller that you are interested in buying their listed model. 
+            Once the seller verifies, they shall add the delivery cost to the listing price and inform the buyer the total amount. 
+            Models are sold by individuals here, and delivery is to be done by seller only, via India Post, DTDC etc. 
+        </p>
+        <h4>Why is there no cart?</h4>
+        <p>
+            Each model is listed by a different person, and needs to be delivered individually by them only. 
+            Having a cart is not possible as you have to contact each and every seller personally to finalize the price of the article and delivery rates. 
+            I am here to just provide you with a platform where you can share your models that you want to sell.
+        </p>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch with us. We'd love to hear from you!</p>
+        <a href="mailto:diecasttrader120@gmail.com" class="email">Email Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; Diecasttrader. No rights reserved LOL.</p>
+    </footer>
+</body>
+</html>

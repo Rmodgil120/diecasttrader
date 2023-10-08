@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matchbox Collection</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'matchbox.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Matchbox</h1>
+        <nav>
+            <ul>
+                <li><a href="../../home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product-list">
+        <!-- Each product should be wrapped in a separate hotwheel-item div -->
+        {% for matchbox in matchbox_list %}
+        <div class="matchbox-item">
+            <a href="#">
+                <img src="{{ matchbox.image_url }}" alt="{{ matchbox.name }}">
+            </a>
+            <h3>{{ matchbox.name }}</h3>
+            <p>Price: ₹{{ matchbox.price }}</p>
+            <div class="talk-to-seller" id="talkToSeller{{ matchbox.id }}">
+                <a href="mailto:{{ matchbox.email_id }}" class="contact-button">Talk via Email</a>
+                <a href="https://wa.me/{{ matchbox.number }}" class="contact-button whatsapp">Talk via WhatsApp</a>
+                <!-- You can add more communication links as needed -->
+            </div>
+        </div>
+        {% endfor %}
+        <!-- Repeat the above structure for other products -->
+    </section>
+</body>
+</html>

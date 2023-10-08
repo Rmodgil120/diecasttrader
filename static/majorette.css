@@ -1,0 +1,97 @@
+/* Your existing CSS styles here */
+
+/* Header styles */
+header {
+    background-image: url("https://images2.alphacoders.com/113/1132805.jpg");
+    background-color: rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    height: 320px;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 8vw;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Product list styles */
+.product-list {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("https://w0.peakpx.com/wallpaper/784/1003/HD-wallpaper-black-lines-stripes-dark-background-dark.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap; /* Prevent wrapping to next line */
+    justify-content: space-between; /* Equal spacing between items */
+    align-items: center; /* Center items vertically */
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    margin: 0 auto; /* Center the container */
+}
+.majorette-item {
+    width: 400px; /* Set a fixed width for all items */
+    height: 400px; /* Set a fixed height for all items */
+    margin: 10px; /* Equal margin on all sides */
+    padding-bottom: 150px;
+    text-align: center;
+    color: white;
+}
+
+.majorette-item img {
+    max-width: 100%;
+    height: 100%; /* Ensure the image fills the entire height of the container */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+}
+
+.majorette-item h3, .majorette-item p {
+    color: white;
+}
+
+/* Talk to the seller section styles */
+.talk-to-seller {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.show {
+    display: block;
+}
