@@ -6,7 +6,7 @@
     <title>other Collection</title>
     {% load static %}
 
-    <link rel="stylesheet" href="{% static 'other.css' %}">
+    <link rel="stylesheet" href="{% static 'others.css' %}">
 </head>
 <body>
     <header>
@@ -20,15 +20,15 @@
     <section class="product-list">
         <!-- Each product should be wrapped in a separate hotwheel-item div -->
         {% for other in other_list %}
-        <div class="other-item">
+        <div class="others-item">
             <a href="#">
-                <img src="{{ other.image_url }}" alt="{{ other.name }}">
+                <img src="{{ others.image_url }}" alt="{{ others.name }}">
             </a>
-            <h3>{{ other.name }}</h3>
-            <p>Price: ₹{{ other.price }}</p>
-            <div class="talk-to-seller" id="talkToSeller{{ other.id }}">
-                <a href="mailto:{{ other.email_id }}" class="contact-button">Talk via Email</a>
-                <a href="https://wa.me/{{ other.number }}" class="contact-button whatsapp">Talk via WhatsApp</a>
+            <h3>{{ others.name }}</h3>
+            <p>Price: ₹{{ others.price }}</p>
+            <div class="talk-to-seller" id="talkToSeller{{ others.id }}">
+                <a href="mailto:{{ others.email_id }}" class="contact-button">Talk via Email</a>
+                <a href="https://wa.me/{{ others.number }}" class="contact-button whatsapp">Talk via WhatsApp</a>
                 <!-- You can add more communication links as needed -->
             </div>
         </div>
